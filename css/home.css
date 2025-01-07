@@ -29,6 +29,10 @@ section {
 	flex-wrap: wrap;
 }
 
+#projects>div>a {
+	text-decoration: none;
+}
+
 #projects>div, #projects>div>a>div {
 	display: flex;
 	justify-content: center;
