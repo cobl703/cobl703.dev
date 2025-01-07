@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>cobl703</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="/css/styles.css">
+		<link rel="stylesheet" href="/css/home.css">
+		<link rel="icon" type="image/x-icon" href="/assets/logo.png">
+	</head>
+	<body>
+		<script src="/js/navbargen.js"></script>
+		<main>
+			<section id="about">
+				<h1>Hello, I'm cobl703!</h1>
+				<h2><span></span><span class="cursor">█</span></h2>
+			</section>
+			<section id="projects">
+				<h1>My Projects</h1>
+				<div>
+					<a href="https://thegodhoper.itch.io/lafbed">
+						<div>
+							<h2>LAFBED</h2>
+							<h3>A breakout-based game</h3>
+							<img src="/assets/lafbed.png">
+						</div>
+					</a>
+					<a href="/">
+						<div>
+							<h2>cobl703.dev</h2>
+							<h3>This website</h3>
+							<img src="/assets/logo.png">
+						</div>
+					</a>
+				</div>
+			</section>
+		</main>
+
+		<script>
+			let values = ["Programmer", "Indie Game Developer", "Minecraft Modder"];
+			let waittime = 32;
+			
+			let typing = document.querySelector("#about h2 span");
+			let word = 0;
+			let waitleft = -1;
+			setInterval(() => {
+				if (waitleft < 0) {
+					let pos = typing.innerHTML.length;
+					if (pos >= values[word].length) {
+						word++;
+						word %= values.length;
+						waitleft = waittime;
+					} else {
+						typing.innerHTML += values[word][pos];
+					}
+				}
+				if (waitleft > 0) {
+					waitleft--;
+				}
+				if (waitleft == 0) {
+					typing.innerHTML = typing.innerHTML.slice(0, -1);
+					if (values[word].startsWith(typing.innerHTML)) {
+						waitleft--;
+					}
+				}
+			}, 100)
+		</script>
+	</body>
+</html>

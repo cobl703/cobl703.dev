@@ -1,0 +1,26 @@
+main {
+	height: calc(100dvh - 116px);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.joke {
+	font-weight: 700;
+	font-size: 120px;
+	margin-bottom: 0;
+}
+
+.error {
+	margin-top: 0;
+}
+
+.error, .message {
+	font-weight: 700;
+	font-size: 30px;
+}
+
+.message {
+	color: gray;
+}

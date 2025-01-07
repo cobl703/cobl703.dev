@@ -1,0 +1,81 @@
+section {
+	box-shadow: 10px 10px 40px black;
+	border: 3px solid white;
+	padding: 16px;
+	margin: 16px;
+}
+
+#about>h1 {
+	font-size: 72px;
+	margin: 0 0 8px;
+}
+
+#about>h2 {
+	font-size: 36px;
+	color: lime;
+	margin: 8px 0 0;
+}
+
+.cursor {
+	animation: blink_cursor 0.5s step-start infinite;
+}
+
+#projects>h1 {
+	text-align: center;
+}
+
+#projects>div {
+	gap: 20px;
+	flex-wrap: wrap;
+}
+
+#projects>div, #projects>div>a>div {
+	display: flex;
+	justify-content: center;
+}
+
+#projects>div>a>div {
+	width: 300px;
+	height: 300px;
+	border-radius: 20px;
+	border: 3px solid white;
+	transition: all 0.5s;
+	position: relative;
+	flex-direction: column;
+	align-items: center;
+	bottom: 0;
+	right: 0;
+}
+
+#projects>div>a>div>h2 {
+	margin-bottom: 0;
+}
+
+#projects>div>a>div>h3 {
+	margin-top: 0;
+	color: gray;
+}
+
+#projects>div>a:hover {
+	color: inherit;
+}
+
+#projects>div>a>div:hover {
+	transition: all 0.5s;
+	bottom: 5px;
+	right: 5px;
+	box-shadow: 5px 5px 20px black;
+}
+
+#projects>div>a>div>img {
+	height: 150px;
+}
+
+@keyframes blink_cursor {
+	0% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0;
+	}
+}

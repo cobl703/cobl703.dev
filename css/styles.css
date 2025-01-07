@@ -1,0 +1,53 @@
+body {
+	font-family: 'Courier New', monospace;
+	color: white;
+	background-color: #172727;
+	margin: 0;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	padding: 8px;
+	background-color: #2f4f4f;
+	font-weight: 700;
+	position: sticky;
+	top: 0;
+	z-index: 1000;
+}
+
+nav>div {
+	display: flex;
+}
+
+nav>div>* {
+	margin: auto 8px;
+}
+
+.navbar-left {
+	font-size: 60px;
+}
+
+.navbar-left>img {
+	width: 64px;
+}
+
+.navbar-right {
+	font-size: 30px;
+}
+
+nav>div>a {
+	text-decoration: none;
+}
+
+a {
+	color: inherit;
+}
+
+a:hover {
+	color: red;
+}
+
+main {
+	padding: 16px;
+}
