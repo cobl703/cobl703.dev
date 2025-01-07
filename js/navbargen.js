@@ -6,7 +6,7 @@ navbar = `
 	</div>
 	<div class="navbar-right">
 		<a href="/">Home</a>
-		<a href="https://github.com/cobl703/cobl703">Github</a>
+		<a href="https://github.com/cobl703/cobl703.dev">Github</a>
 	</div>
 </nav>
 `;
